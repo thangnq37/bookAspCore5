@@ -1,0 +1,36 @@
+<form class="form-signin"  [formGroup]="signForm" (ngSubmit)="signup()">
+  <h1 class="h3 mb-3 font-weight-normal">
+    Register <button routerLink="/">login</button>
+  </h1>
+  <div class="mb-3 mt-3">
+    <label for="Firstname" class="sr-only">
+      First Name
+    </label>
+    <input type="text"  formControlName="FirstName" name="FirstName" id="FirstName" class="form-control" placeholder="Firstname" required="" autofocus="">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="Firstname" class="sr-only">
+      Last Name
+    </label>
+    <input type="text"  formControlName="LastName" name="LastName" id="LastName" class="form-control" placeholder="Lastname" required="" autofocus="">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="Email" class="sr-only">
+      Email address
+    </label>
+    <input type="email"  formControlName="Email" name="Email" id="Email" class="form-control" placeholder="Email address" required="" autofocus="">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="Password" class="sr-only">
+      Password
+    </label>
+    <input type="password"  formControlName="Password" name="Password"  id="Password" class="form-control" placeholder="Password" required="">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="confirmPassword" class="sr-only">
+      Confirm Password
+    </label>
+    <input type="confirmPassword"  formControlName="confirmPassword" name="confirmPassword"  id="confirmPassword" class="form-control" placeholder="Password" required="">
+  </div>
+  <input type="submit" value="login" class="btn btn-primary">
+</form>

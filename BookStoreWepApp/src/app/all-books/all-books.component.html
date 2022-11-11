@@ -1,0 +1,19 @@
+<p>all-books works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">##</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <th scope="row">{{book.id}}</th>
+      <td>{{book.title}}</td>
+      <td>{{book.description}}</td>
+      <td><button class="btn btn-danger" (click)="onDelete(book.id)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

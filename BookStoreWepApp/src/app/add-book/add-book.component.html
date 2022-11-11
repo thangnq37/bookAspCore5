@@ -1,0 +1,12 @@
+<p>add-book works!</p>
+<form [formGroup]="bookForm" (ngSubmit)="saveBook()">
+  <div class="mb-3">
+    <label for="Title" class="form-label">Title</label>
+    <input type="text" formControlName="Title" name="Title" class="form-control" id="Title">
+  </div>
+  <div class="mb-3">
+    <label for="Description" class="form-label">Description</label>
+    <input type="text" class="form-control"  formControlName="Description"  id="Description">
+  </div>
+  <input type="submit" value="save" class="btn btn-primary">
+</form>

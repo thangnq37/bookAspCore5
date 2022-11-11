@@ -1,0 +1,18 @@
+<form class="form-signin"  [formGroup]="loginForm" (ngSubmit)="login()">
+  <h1 class="h3 mb-3 font-weight-normal">
+    Please sign in <button routerLink="/signup" >Register</button>
+  </h1>
+  <div class="mb-3 mt-3">
+    <label for="Email" class="sr-only">
+      Email address
+    </label>
+    <input type="email"  formControlName="Email" name="Email" id="Email" class="form-control" placeholder="Email address" required="" autofocus="">
+  </div>
+  <div class="mb-3 mt-3">
+    <label for="Password" class="sr-only">
+      Password
+    </label>
+    <input type="password"  formControlName="Password" name="Password"  id="Password" class="form-control" placeholder="Password" required="">
+  </div>
+  <input type="submit" value="login" class="btn btn-primary">
+</form>
